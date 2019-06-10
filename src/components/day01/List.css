@@ -1,0 +1,12 @@
+
+.header_img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.item_name{
+    font-size: 30px;
+}
+.item_age{
+    font-size: 30px;
+}

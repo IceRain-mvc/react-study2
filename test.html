@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="xinxin" style="text-align: center">
+        <img width="300" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560088140436&di=d53ae2719b600217635c9b376a1abeb9&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201802%2F10%2F20180210152230_mYaUP.thumb.224_0.gif" alt="">
+    </div>
+    <div id="shilian" style="text-align: center">
+        <img width="300" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560088216088&di=ffe19a3b8c7c840e12f6385fb06ca4f5&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_gif%2FzpjicLAxDMpEQMIb6KqMPtE3ZRiaTyyfIpJpJSkvCqibiaaiaKANvsutCCTCGztXLk5myBhmW4icrFVGQFDIl0O5sx6Q%2F640%3Fwx_fmt%3Dgif" alt="">
+    </div>
+</body>
+
+<script>
+
+    let oXinXin = document.getElementById("xinxin");
+    let oshilian = document.getElementById("shilian");
+    let name = "";
+    let age = "";
+    let height = "";
+    let addName = () => {
+        name = prompt("请输入姓名");
+        if (!name.trim()) {
+            alert("输入的姓名为空,请重新输入");
+            addName();
+        }
+
+    };
+
+    let addAge = () => {
+
+
+        age = prompt("请输入年龄");
+        if (!age.trim()) {
+            alert("输入的身高为空,请重新输入");
+            addAge();
+        }
+
+
+    };
+    let addHeight = () => {
+
+        height = prompt("请输入身高");
+        if (!height.trim()) {
+            alert("输入的身高为空,请重新输入");
+            addHeight();
+        }
+
+    };
+
+    addName();
+    addAge();
+    addHeight();
+
+    if (parseInt(age) <= 0) {
+        alert("年龄是:"+age+",还没出生呢");
+        oXinXin.style.display = "none";
+        oshilian.style.display = "block";
+
+    } else if (18 > parseInt(age) > 0) {
+        alert("年龄是:"+age+",未成年 不适合恋爱");
+        oXinXin.style.display = "none";
+        oshilian.style.display = "block";
+
+
+    } else {
+        alert("年龄是:"+age+",我们恋爱吧");
+        oXinXin.style.display = "block";
+        oshilian.style.display = "none";
+
+    }
+
+
+</script>
+</html>

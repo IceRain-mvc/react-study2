@@ -1,0 +1,136 @@
+day01:
+
+React简介:
+  设计架构:MVC
+  没有指令 手动
+Vue
+  设计架构:MVVM
+  指令
+
+脚手架:
+  npx create-react-app 项目名字(小写)
+
+
+jsx:  js+xml
+xml:<div></div>
+js :{解析js}  <解析xml>
+
+jsx  虚拟DOM---> ReactDom.render() 渲染到页面上 真实DOM
+
+React    : class 继承 Component
+ReactDom : render :渲染 createElement() 创建虚拟Dom
+
+api:
+
+jsx  :  虚拟DOM
+
+导出 --> 转成真实DOM
+
+不提示:
+  插件  jsx  下载量 10w+
+  jsx
+
+
+下午:
+  React
+  1:jsx  javascript  +  xml
+    解析规则 {解析js}  <解析xml>
+
+    render return(div)
+
+    jsx  === 虚拟DOM  === react元素  div  id  > 哈哈哈
+
+    对象 = React.createElement("div",{id:aaa},"哈哈哈")
+
+  2:虚拟Dom转化成真实DOM
+
+    <虚拟DOM /> 组件
+    html  id root
+    ReactDom.render(<虚拟DOM/>,document.getElementById("root"),()=>{})
+
+创建一个组件
+  1:创建一个js文件  class 继承 React.Component{
+    render(){
+        return (jsx)
+    }
+  }
+
+  2:抛出
+  3:使用页面 引入   <Day01 />
+
+  组件之间的传值:
+    父川子:
+      vue:  :name = ""
+            props:[]  {}
+      react :  name  {...对象}
+            this.props.name
+    子传父:
+
+day02:
+  回顾:
+  组件定义
+    1:js
+    import React,{Component} from 'react'
+    2:class App extends Component{
+        构造:super
+        //vue  data
+        this.state = {
+            name:""
+        }
+
+        render(){
+           jsx === 虚拟DOM === react元素
+           {解析js  不能 if  fori}  <xml>
+        }
+
+        //...生命周期
+
+    }
+
+  组件传值
+    父传子
+     <Child name={"要传的值"} />
+    子组件: this.props.name
+
+  日考题:
+
+  父传子
+  子传父:
+    vue:
+      父组件 <child @childEmit="函数">  methods:{函数(参数){}}
+      子组件 click(){
+        this.$emit("childEmit",参数)
+      }
+    react:
+      父组件
+        1: <Child onHandleChild="函数">  父组件 函数(参数){}
+
+      子组件
+        2:this.props.onHandleChild("传值")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+一个房子里面有一个房间和一个洗手间，房间里面有一个人和两条狗。
+请你完成组件：House，Room，Bathroom，Man，Dog，它们的最外层都用 div 标签包裹起来，类名分别为：house，room，bathroom，man，dog。
+组件的实现应该具有上述的嵌套关系。
+
+
+
+
+

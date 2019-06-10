@@ -1,0 +1,9 @@
+.show {
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 50px;
+}
