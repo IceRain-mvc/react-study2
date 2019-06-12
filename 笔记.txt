@@ -205,10 +205,31 @@ day03:
        componentWillUnmount
        取消网络请求
 
-
  子页:传递给子组件  list
    判断数据有没有改变 render
    改变  改变的条数
+
+原生
+1:div  onClick=aaa()
+
+react:合成
+1:div  onCLick={this.aaa}
+//1: this  .bind(this)
+//2:没有()
+
+react合成事件
+
+vue:双向绑定  v-model
+ref
+
+受控组件:
+    input  value={this.state.name} onChange={(e)=>{
+        this.setState({name:e})
+    }}
+
+非受控组件:
+
+
 
 
 
