@@ -108,6 +108,111 @@ day02:
       子组件
         2:this.props.onHandleChild("传值")
 
+day03:
+  6个
+  回顾:
+    组件 传值
+      父传子
+        <CHild name={}>  子组件 :this.props.name
+      子传父
+        <Child 事件={函数}/> 父组件 函数(参数){}
+        子组件: this.props.事件("")
+      非父子
+        Context
+        发布 订阅
+      状态管理
+        Redux
+        MobX
+
+
+  这节课:
+    生命周期:
+    为什么?
+    做什么?
+      项目 健壮
+      优化代码
+    react:
+     16.8.6 : 新 旧
+     新的生命周期
+
+     旧的生命周期
+        挂载   更新  销毁
+        constructor:构造
+          初始state
+          绑定this给函数
+        render(): 返回一个jsx
+          1:jsx
+          2:字符串
+          3:null
+          4:boolean
+          5:fragment
+        componentDidMount(){}
+            component:组件
+            Did:已经
+            Mount:挂载  Dom
+          1:获取Dom节点
+          2:发送ajax请求
+          3:初始定时器
+
+        更新
+          改变 state  props
+          render
+          componentDidUpDate
+            更新Dom :
+        销毁
+          componentWillUnmount
+          清空定时器
+          中断网络请求
+           内存泄漏
+  旧的最常用的生命周期
+     不常用
+
+
+旧的声明周期不能和新的生命周期共存
+
+新的生命周期
+  挂载
+  constructor()
+  static getDerivedStateFromProps(nextProps)
+    :取代了3个生命周期
+    获取父组件传过来的Props给State
+    static:静态 属于类 不属于实例
+    不能调用this
+    this.setState({}):失效
+    return {user:nextProps.user}
+  render(){}
+  componentDidMount()
+  更新
+  static getDerivedStateFromProps()
+  shouldComponentUpdate()
+  render()  返回的虚拟Dom     垃圾
+  getSnapshotBeforeUpdate():  垃圾清空   中断
+    获取更新之前的快照
+    记录虚拟Dom--->真实DOM的过程
+  componentDidUpdate() 挂载到真实dom
+
+  卸载
+  当组件从 DOM 中移除时会调用如下方法：
+  componentWillUnmount()
+
+
+
+刷新
+列表
+数据:axios --->后台  express
+请求数据 componentDidMount
+刷新:  loading  2s 定时器
+       componentWillUnmount
+       取消网络请求
+
+
+ 子页:传递给子组件  list
+   判断数据有没有改变 render
+   改变  改变的条数
+
+
+
+
 
 
 
