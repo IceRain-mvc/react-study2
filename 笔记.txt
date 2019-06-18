@@ -229,6 +229,216 @@ ref
 
 非受控组件:
 
+day05:
+  回顾:
+  生命周期:
+    旧:
+    挂载
+    constructor
+    componentWillMount
+    render
+    componentDidMount
+
+    更新
+    props                      state
+    componentWillReceiveProps   shouldComponentUpdate(nextProps,nextState,nextContext){return boolean}
+    shouldComponentUpdate       componentWillUpdate
+    componentWillUpdate         render
+    render                      componentDidUpdate
+     返回的类型
+     jsx
+     Fragment
+     null
+     boolean
+     ""
+    componentDidUpdate
+
+
+    销毁
+    componentWillUnmount
+
+
+新的:
+  挂载
+  static getDerivedStateFromProps
+  render
+  componentDidMount
+
+  更新
+  props             state                            forceUpdate:forceUpdate
+  static getDerivedStateFromProps(props){
+        × this
+        return {num:props.num}
+  }
+
+  shouldComponentUpdate()
+  render
+  getSnapShotBeforeUpdate(prevProps,prevState)
+  {return 记录}
+  componentDidUpdate(prevProps,prevState,snapShot)
+  {Dom  if(){setState({})}}
+
+
+受控组件
+  form
+  1:
+  input  value="this.state.value"  onChange={(e)=>{
+    this.setState({value:e.target.value})
+  }}
+
+非受控组件
+  ref
+  this.refInput = React.createRef();
+  input ref = {this.refInput}
+
+  this.refInput.current.value
+
+  ref:
+    音频
+    强制动画 canvas
+    第三方
+
+
+点击之后
+  高亮
+
+  setTimeout  0.2
+
+  flag:boolean  true
+  style={flag?{}:{}}
+
+day06:
+  回顾:
+  案例
+    1:受控组件
+    input  value={this.state.value} onChange={(e)=>{this.setState({
+        value:e.target.value
+    })}}
+
+    2:非受控
+    this.aaaReaf = react.createRef();
+    input ref={this.aaaRef}
+
+    this.aaaRef.current.value
+
+这节课:
+
+
+  发布
+   送饭
+  订阅
+   牛奶
+   书
+   饭
+
+
+  程序:
+    react
+
+  react:
+    jsx  {}  <>   React.createElement("div",null,React.createElement()...)
+    组件 创建  传值
+      父传子
+      子传父
+      计算器
+    生命周期
+      旧
+      新
+    事件 :合成事件
+    受控组件 :
+      form  onChange={(e)=>{this.setState({})}}
+    非受控组件
+      form  ref  value
+    发布订阅
+
+
+    路由     配置
+    高阶组件 实际开发 高阶函数
+    Redux    Vuex    异步actions 中间件
+
+
+    复习题
+      月考题
+
+day07:
+   封装组件
+       按钮
+       弹框
+       列表
+       头部
+
+       弹框:
+        1:内容 样式
+        2:事件-->父组件中处理
+
+
+
+   类型验证
+   PureComponent
+
+day08:
+   回顾:
+   封装组件:
+     1:传参
+     2:可复用
+
+
+   jsx  组件 props state
+   生命周期
+   路由  ()
+   redux
+
+   发布订阅
+   高阶组件
+
+
+    路由
+    高阶组件
+    redux
+
+  路由:
+    干什么的?
+      跳转
+      切换  传值
+     怎么实现?
+       vue: router-view
+            router-link to="/"
+            router-view
+       react:
+            react-router
+
+            2种方式
+            React Native:  RN  app android android工程师(java) ios ios工程师 ObjectC
+                  React:
+
+day09
+  回顾:
+    路由
+    Route:显示  path 路径   component:组件
+    Link :跳转   to
+    NavLink : 样式  to
+    Switch:管理  Route  Redirect
+    Redirect:重定向  to="/home/aaa"  exact  全部匹配
+    BrowserRouter as Router: history  可以和后台交互
+       根元素
+    HashRouter : 静态  #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
