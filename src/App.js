@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Home from "./components/day09/Home";
+// import Home from "./components/day09/Home";
 // import Event from "./components/day04/Event";
 // import Day05 from "./components/day05/Day05";
 // import Father from "./components/day04/Father";
@@ -15,6 +15,8 @@ import Home from "./components/day09/Home";
 // import Index from "./components/day07/Index";
 // import Index from "./components/day08/Index";
 // import MyRouter from "./components/day08/MyRouter";
+// import Day10 from "./components/day10/Day10";
+import Baby from "./components/day10/Baby";
 
 
 class App extends Component {
@@ -35,7 +37,9 @@ class App extends Component {
                 {/*<PiGeChang/>*/}
                 {/*<Index/>*/}
                 {/*<MyRouter/>*/}
-                <Home />
+                {/*<Home />*/}
+                {/*<Day10/>*/}
+                <Baby/>
             </div>
         );
     }

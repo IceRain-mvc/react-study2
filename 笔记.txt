@@ -423,9 +423,29 @@ day09
        根元素
     HashRouter : 静态  #
 
+day10:
+    import {BrowserRouter as Router,Link,Route,Switch}
+
+    Router
+       地址栏
+       Link to="/home"  地址栏
+       Route path="/home"  component=Home
+       Route path="/page"  component=Page
+       Route path="/me"  component=Me
+       "/"  "/home"
+       Redirect from=""  to="/home"
+
+    Switch  Route Redirect
+       Route path="/home"  component=Home
+       Route path="/page"  component=Page
+       Route path="/me"  component=Me
+       Redirect
 
 
-
+    1:配置
+    RouterView   <RouterView routes={[{path:"",component},{path:"",redirect:""}]}/>
+            Route path="/home"  component=Home   路由对象  render={(props)=>{}}
+            Redirect from  to
 
 
 
