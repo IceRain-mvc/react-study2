@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+// import Father from "./components/day11/Father";
+import Index from "./components/day11/intercept/Index";
 // import Home from "./components/day09/Home";
 // import Event from "./components/day04/Event";
 // import Day05 from "./components/day05/Day05";
@@ -16,7 +18,7 @@ import React, {Component} from 'react';
 // import Index from "./components/day08/Index";
 // import MyRouter from "./components/day08/MyRouter";
 // import Day10 from "./components/day10/Day10";
-import Baby from "./components/day10/Baby";
+// import Baby from "./components/day10/Baby";
 
 
 class App extends Component {
@@ -39,7 +41,9 @@ class App extends Component {
                 {/*<MyRouter/>*/}
                 {/*<Home />*/}
                 {/*<Day10/>*/}
-                <Baby/>
+                {/*<Baby/>*/}
+                {/*<Father/>*/}
+                <Index/>
             </div>
         );
     }

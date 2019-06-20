@@ -6,6 +6,8 @@ import Listen from "../views/Listen";
 import BabySong from "../views/Listen/BabySong";
 import BabyStory from "../views/Listen/BabyStory";
 import Me from "../views/Me";
+import Detail from "../views/Detail";
+import Login from "../views/Login";
 
 const routes = [
     {
@@ -26,6 +28,8 @@ const routes = [
         ]
     },
     {path: "/me", component: Me},
+    {path: "/detail", component: Detail},
+    {path: "/login", component: Login},
     {path: "/", redirect: "/look"}
 ];
 

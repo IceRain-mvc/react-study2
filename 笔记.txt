@@ -448,8 +448,38 @@ day10:
             Redirect from  to
 
 
+    拦截:
+      高阶组件
+
+day11
+    高阶组件:
+    组件 = withRouter(组件)
+
+    高阶组件:函数
+            参数:组件
+            返回值:组件
+            xxx(组件){
+                return 新的组件
+            }
+
+    1:MyComponent = 函数(MyComponent)
+    2:操作方式
+      1:代理
+        操作props      withRouter()
+        包装           弹框  吸顶  loading
+        抽取状态
+        ref(不常用也不推荐)
+        横切关注点
+        <MyComponent /> 父子
 
 
+
+      2:继承
+        生命周期  :
+            数据请求
+            发布 订阅
+
+intercept
 
 
 

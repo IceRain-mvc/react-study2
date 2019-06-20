@@ -9,7 +9,7 @@ class Baby extends Component {
         return (
             <BrowserRouter>
                 <RouterView routes={routes}/>
-
+                {/*Switch>Route{path  component}+Reditect*/}
             </BrowserRouter>
         );
     }

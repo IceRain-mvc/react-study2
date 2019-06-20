@@ -12,7 +12,7 @@ class RouterView extends Component {
         let {routes} = this.props;
 
         //routes  {path  component} ,{path ,redirect}
-        //1:取出 {path ,redirect}  ---><Redirect>
+        //1:取出 {path="/" ,redirect="/home"}  ---><Redirect from  to>
         let redirectArr = routes.filter((item, index) => item.redirect);
         // console.log(redirectArr);
         let RedirectArr = redirectArr.map((item, index) => {
@@ -20,7 +20,7 @@ class RouterView extends Component {
         });
         //RedirectArr-->  [<Redirect/>,<Redirect/>]
 
-        //2:routes 去掉{path ,redirect} 以便   遍历
+        //2:routes 去掉{path ,redirect} 以便   遍历  {component }  {redirect}
         routes = routes.filter((item) => !item.redirect);
 
         return (
@@ -40,7 +40,6 @@ class RouterView extends Component {
                                       //   search  ?name=张三&age=12
                                       // match
                                       //   params:  /ke/321
-                                      console.log(props);
                                       return <item.component children={item.children} {...props}/>
                                   }}
                     />
