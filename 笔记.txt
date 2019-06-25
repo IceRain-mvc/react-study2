@@ -481,10 +481,92 @@ day11
 
 intercept
 
+    Redux:
 
 
 
+day12:
 
+
+
+day13
+    回顾:
+    redux:
+        1:下载 redux 包
+        2:创建仓库
+          let store = createStore()
+          export default store
+
+    react-redux:
+        store.dispatch({type:"",aaa:""})
+
+        this.props.xxx()
+
+        this.getState().xxx
+
+        this.props.xxx
+
+        映射 : 复制
+        dispatch -->connect   组件
+        //高阶组件
+        //1:props
+        //2:生命周期
+        //3:包装
+
+        1:Provider 将connect 和 store 关联起来
+        2:connect()()
+
+    1:下载 react-redux
+        1:组件 引入{connect} react-redux
+        2:最外层 <Provider store={store}>    store-->connect
+
+        </Provider>
+
+
+day14:
+    redux:
+    react-redux / mobx
+
+    1:仓库
+    store
+
+    2:在哪里导入
+
+    Provider : 提供  store = {仓库}   --->挂载到了
+        connect:高阶组件 props
+        Home = connect(mapStateToProps,mapDispatchToProps)(Home)
+
+
+    //同步
+    dispatch({type:,data:})
+    网络请求
+
+    axios.get().then((res)=>{
+        res.data
+        dispatch({type:,data:res.data})
+
+    })
+
+    异步actions:
+        改造
+        //真:
+        dispatch({type:})
+
+        //假的dispatch(()=>{}) :
+        dispatch()
+
+day16:
+    改造
+    dispatch({})
+    dispatch(函数) --->什么时候执行 thunk
+    函数(next(真的dispatch)){
+        异步axios/
+        (res){
+            真的dispatch({})
+        }
+    }
+
+    thunk:改造真的dispatch 变成假的dispatch  就可以传递回调 在回调中得到真的dispatch
 
 
 

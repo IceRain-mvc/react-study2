@@ -7,7 +7,9 @@ function Wrap(props) {
     return <div>
         <h2>确定删除么</h2>
         <button>确定</button>
-        <button>取消</button>
+        <button onClick={()=>{
+            props.close()
+        }}>取消</button>
     </div>
 }
 
@@ -20,10 +22,13 @@ class Home extends Component {
                 <Header/>
 
                 <button onClick={()=>{
-
+                    this.show();
                 }}>弹弹弹啊</button>
 
-                <Wrap />
+                <Wrap getMethod={(close,show)=>{
+                    this.show = show;
+                    this.close = close;
+                }}/>
                 <button onClick={() => {
                     this.props.history.push("/homeDetail")
                 }}>Home跳转详情

@@ -5,6 +5,7 @@ const coverStyle = {
     left: 0, top: 0, bottom: 0, right: 0,
     background: 'rgba(0,0,0,0.5)',
     zIndex: 999,
+    /*过渡 */
     transition: 'transform 0.3s'
 };
 const contentStyle = {
@@ -48,7 +49,7 @@ function CreateModal(Content) {
         };
 
         render() {
-            window.cover = this;
+            // window.cover = this;
             let {scale, display} = this.state;
             return <div id="cover"
                         onTransitionEnd={() => this.transEnd()}

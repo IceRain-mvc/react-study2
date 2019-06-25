@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 // import Father from "./components/day11/Father";
-import Index from "./components/day11/intercept/Index";
+// import Index from "./components/day11/intercept/Index";
+// import Father from "./components/day12/Father";
+import {Provider} from "react-redux";
+// import store from "./components/day13/store";
+// import Home from "./components/day13/Home";
+// import ZHangDan from "./components/day14/ZHangDan";
+import store from "./components/day14/store/store";
+import Home from "./components/day15/Home";
 // import Home from "./components/day09/Home";
 // import Event from "./components/day04/Event";
 // import Day05 from "./components/day05/Day05";
@@ -43,8 +50,16 @@ class App extends Component {
                 {/*<Day10/>*/}
                 {/*<Baby/>*/}
                 {/*<Father/>*/}
-                <Index/>
+                {/*<Index/>*/}
+                {/*<Provider store={store}>*/}
+                    {/*<Home/>*/}
+                {/*</Provider>*/}
+                <Provider store={store}>
+
+                <Home/>
+                </Provider>
             </div>
+
         );
     }
 }
