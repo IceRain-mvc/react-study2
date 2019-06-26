@@ -1,0 +1,22 @@
+.videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.videoContainer span {
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 4px;
+
+}
+
+.videoContainer span:active {
+    background-color: pink;
+
+}

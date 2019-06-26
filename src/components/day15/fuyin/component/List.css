@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.nav div {
+    flex: 1;
+
+}
+.nav a {
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    text-decoration: none;
+    width: 100%;
+    color: #000;
+}
+.nav .active {
+    background-color: #e24743;
+    color: #ffffff;
+
+}
+

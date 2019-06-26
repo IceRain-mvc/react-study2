@@ -569,6 +569,10 @@ day16:
     thunk:改造真的dispatch 变成假的dispatch  就可以传递回调 在回调中得到真的dispatch
 
 
+    上午:
+      代理
+      thunk
+
 
 
 
