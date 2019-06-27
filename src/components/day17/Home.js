@@ -4,8 +4,17 @@ import Page from "./views/Page";
 import ZiXuan from "./views/ZiXuan";
 import Add from "./views/Add";
 // import {Switch} from "antd";
+import request from "./request";
+import {connect} from "react-redux";
 
 class Home extends Component {
+
+
+    componentDidMount() {
+        // request();//异步
+        this.props.saveAllData(request);
+
+    }
     render() {
         return (
             <BrowserRouter>
@@ -18,6 +27,20 @@ class Home extends Component {
             </BrowserRouter>
         );
     }
+
+
 }
 
-export default Home;
+let initMapStateToProps = (state) => {
+    return {}
+};
+
+let initMapDispatchToProps = (dispatch) => {
+    return {
+        saveAllData: (fn) => {
+            dispatch(fn);
+        }
+    }
+};
+
+export default connect(initMapStateToProps,initMapDispatchToProps)(Home);
