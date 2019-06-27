@@ -57,7 +57,7 @@ let initMapDispatchToProps = (dispatch) => {
             dispatch({type: "ADD_ALL_DATA", data})
         }
     }
-}
+};
 
 
 export default connect(initMapStateToProps, initMapDispatchToProps)(List);

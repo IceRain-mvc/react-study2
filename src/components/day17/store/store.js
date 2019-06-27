@@ -17,23 +17,9 @@ let allDataReducer = function (state =[], action) {
 
 };
 
-let allFilterReducer = function (state =[], action) {
-    switch (action.type) {
-        case "ADD_FILTER_DATA":
-            state = JSON.parse(JSON.stringify(action.arr));
-            console.log(state);
-            return [...state];
-
-        default:
-            return [...state]
-
-    }
-
-};
-
 
 let reducers = combineReducers({
-    allDataReducer,allFilterReducer
+    allDataReducer
 });
 
 

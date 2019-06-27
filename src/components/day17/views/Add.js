@@ -21,8 +21,6 @@ class Add extends Component {
                 {/*{this.state.arr.map((item)=><div>{item.name}</div>)}*/}
                 {/*1:*/}
                 <List value={this.state.value}/>
-
-
             </div>
         );
     }
@@ -39,9 +37,6 @@ let initMapDispatchToProps = (dispatch) => {
     return {
         saveAllData: (fn) => {
             dispatch(fn);
-        },
-        saveFilterData: (arr) => {
-            dispatch({type: "ADD_FILTER_DATA", arr});
         }
     }
 };
