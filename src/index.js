@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import "antd/dist/antd.css";
 
 // 虚拟Dom -->转到 真实DOM  diff算法
 ReactDOM.render(<App />, document.getElementById('root'),()=>{

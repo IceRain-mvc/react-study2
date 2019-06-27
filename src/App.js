@@ -9,7 +9,9 @@ import {Provider} from "react-redux";
 // import store from "./components/day14/store/store";
 // import Home from "./components/day15/Home";
 import store from "./components/day15/store/store";
-import Index from "./components/day15/fuyin/Index";
+import Home from "./components/day17/Home";
+// import Index from "./components/day15/fuyin/Index";
+// import Home from "./components/day16/Home";
 // import Home from "./components/day09/Home";
 // import Event from "./components/day04/Event";
 // import Day05 from "./components/day05/Day05";
@@ -57,7 +59,8 @@ class App extends Component {
                 {/*<Home/>*/}
                 {/*</Provider>*/}
                 <Provider store={store}>
-                    <Index/>
+                    {/*<Index/>*/}
+                    <Home/>
                 </Provider>
             </div>
 

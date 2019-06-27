@@ -574,6 +574,20 @@ day16:
       thunk
 
 
+day16:
+    antd
+
+
+day17:
+    回顾:
+    antd ui
+    1:下包  antd
+    2:先要 css
+      import {Button,Table} from "antd"
+
+    1:创建仓库   Provider
+    2:路由
+    3:功能
 
 
 
@@ -587,20 +601,6 @@ day16:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-一个房子里面有一个房间和一个洗手间，房间里面有一个人和两条狗。
-请你完成组件：House，Room，Bathroom，Man，Dog，它们的最外层都用 div 标签包裹起来，类名分别为：house，room，bathroom，man，dog。
-组件的实现应该具有上述的嵌套关系。
 
 
 
