@@ -589,6 +589,209 @@ day17:
     2:路由
     3:功能
 
+1:回顾
+    day01:
+        jsx:xml+js
+        {解析js  <xml
+
+
+        {if(){}}
+
+        {数组.map(()=>{
+            if(){
+
+            }
+
+            for()
+        })}
+
+        React
+            创建一个组件
+
+            class extends React.Component{}
+
+            React.createElement("div",{属性 id:""},内容)  创建虚拟DOM
+
+            生命周期
+            render
+            componentDidMount
+
+            ReactDom.render(</App>, document.getElementById("root"), 回调函数)
+            ReactDom.render(</App>, document.getElementById("container"), 回调函数)
+
+        ReactDom
+
+
+    组件
+        套用
+        传值
+
+        props:
+            只读
+
+        state:
+            可写可读
+
+
+    生命周期
+        新                               旧
+        static getDerivedStateFromProps  componentWillMount  componentWillReceiveProps componentWillUpdate
+
+        render
+
+        getSnapshotBeforeUpdate(){
+            记录:虚拟Dom-->真实dam
+            操作dom???
+
+            记录 滚动的高度
+        }
+
+        componentDidUpdate(){
+            操作dom
+        }
+
+    合成事件
+        写法:驼峰
+        事件源
+
+        事件冒泡
+        事件捕获
+
+
+    受控组件
+
+
+        2步    1:value={this.state.aaa}
+               2:onChange(e){
+                this.setState{}
+               }
+
+        表单
+
+
+    非受控
+        this.aaa = React.createRef()
+        input refs={this.aaa}
+
+        this.aaa.current  dom
+
+
+        ref:
+            1:音频  视频
+            2:强制动画
+            3:第三方库
+
+
+    观察者    订阅
+    被观察者  发布
+
+    发布订阅
+        发布
+        订阅
+
+    封装组件:
+        1:传参
+        2:回调   接口
+
+    路由:
+        静态
+            BrowserRouter/HashRouter
+              div
+                Switch
+                    Route
+                    Redirect
+            NavLink to
+
+        动态
+            Route   path:"ly/:id"
+            this.props.history.push/replace("/ly/111")
+
+            this.props.match.params
+
+
+        子路由:
+            Home
+                Switch
+                    Route
+                    Redirect
+
+            RouterView  routes={[{path,component}]}
+
+
+        高阶组件
+            函数 接收 组件  返回 新的组件
+            函数(){
+                return 函数
+                    rentrn 函数
+            }
+
+            新的组件 = 函数(组件)
+
+            应用场景
+                操作props    connect  withRouter
+                包装组件     弹框
+                控制生命周期 拦截
+        redux:
+            下载  redux
+            创建一个仓库
+            reducer(state,action){
+                收到action.xxx
+                switch(action.type)
+                {
+                    深拷贝:JSON   //浅拷贝{...}  Object.assign()
+
+                }
+
+            }
+
+            存储
+            store.dispatch({type:,xxx})
+
+            store.getState().reducer
+
+        react-redux:
+            1:connect 作用 state--->映射到了props
+            2:Provider store={store} 仓库 和 connect 组件 连接起来
+
+
+        中间件
+            丰富dispatch
+            异步请求
+             redux-thunk:
+             dispatch({})
+
+             函数(next)
+             (函数)
+
+        antd:
+            ui
+
+
+优化项目:
+    1:生命周期  shouldComponentUpdate
+    2:React.PureComponent
+        shouldComponentUpdate(){
+
+        }
+    3:<Child/>  <Child1/>  render(div)
+    div>div>div>div>div>div
+    解析:xml
+    Fragment -->透明</>
+        div
+        div
+        div
+
+
+
+    SAX   xml   div  for  for   for
+    PULL  xml
+    DOM   原生
+
+
+2:异步组件
+
+  import 组件 from "路径"
+
 
 
 

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import List from "../components/List";
-import filter from "../utils/filter"
 import {connect} from "react-redux";
 
 class Add extends Component {
@@ -15,10 +14,8 @@ class Add extends Component {
                 <input type="text" value={this.state.value} onChange={(e) => {
                     let value = e.target.value;
                     this.setState({value});
-                    /*筛选*/
-                    // this.props.saveFilterData(filter(this.props.allData, value));
                 }}/>
-                {/*{this.state.arr.map((item)=><div>{item.name}</div>)}*/}
+
                 {/*1:*/}
                 <List value={this.state.value}/>
             </div>
