@@ -43,8 +43,9 @@ class CreateClass extends Component {
             studentList: []
         };
 
-        this.props.history.push("/classDetail", {classId: classId});
         this.props.addClassRoom(classObj);
+
+        this.props.history.push("/classDetail", {classId: classId});
 
     }
 }
