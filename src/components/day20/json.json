@@ -1,0 +1,46 @@
+
+[
+  {
+    "id":1,
+    "className":"",
+    "studentList":[
+      {
+        "studentId":1,
+        "name":"",
+        "classId":1
+      },
+      {
+
+        "name":"",
+        "classId":1
+      },
+      {
+
+        "name":"",
+        "classId":1
+      }
+    ]
+  },
+  {
+    "id":2,
+    "className":"",
+    "studentList":[
+      {
+
+        "name":"",
+        "classId":1
+      }
+    ]
+  },
+  {
+    "id":3,
+    "className":"",
+    "studentList":[
+      {
+
+        "name":"",
+        "classId":1
+      }
+    ]
+  }
+]
